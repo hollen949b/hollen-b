@@ -2,6 +2,7 @@
 import classNames from "classnames";
 import { motion } from "framer-motion"
 import Image from "next/image";
+import Link from "next/link";
 
 export default function SectionAbout({
     className
@@ -27,16 +28,12 @@ export default function SectionAbout({
                                 }>
                                 <div className="grid grid-cols-12">
                                     <div className="col-span-12">
-                                        <h2 className="text-violet-500 font-extrabold uppercase text-lg">Brandon Hollenbeck</h2>
-                                        <div className="text-zinc-700 font-extrabold uppercase text-4xl md:text-[90px] leading-[50px] md:leading-[74px]">
-                                            <h3>
-                                                What <br />I am
-                                            </h3>
-                                        </div>
+                                        <h2 className="text-violet-500 font-extrabold uppercase text-2xl">Brandon Hollenbeck</h2>
+                                        <h3 className="text-zinc-700 font-extrabold uppercase text-4xl md:text-[90px] leading-[50px] md:leading-[74px]">What<br /> I am</h3>
                                     </div>
-                                    <div className=" col-start-1 col-span-10">
+                                    <div className="col-start-1 col-span-11">
                                         <h4 className="text-zinc-500 font-extrabold uppercase text-xl md:text-[30px] md:leading-[28px] pl-5 pt-2">
-                                            Creative Web Designers & Developer
+                                            Creative Web Designer & Developer
                                         </h4>
                                     </div>
                                 </div>
@@ -103,14 +100,14 @@ export default function SectionAbout({
                                 </div>
                                 <div className="relative">
                                     <div className="absolute z-10 bottom-0 right-0 md:-right-[40px] bg-violet-500 rounded-full -rotate-12 outline outline-offset-4 outline-4 outline-violet-500 h-28 w-28 md:h-40 md:w-40">
-                                        <a className="text-center h-28 w-28 md:h-40 md:w-40 flex flex-col gap-2 items-center justify-center pb-5 md:pb-8" href="/#about">
+                                        <Link className="text-center h-28 w-28 md:h-40 md:w-40 flex flex-col gap-2 items-center justify-center pb-5 md:pb-8" href="/#about">
                                             <span className="rotate-45">
                                                 <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 95.91" className="h-10 w-10 md:h-16 md:w-16 fill-white">
                                                     <path d="M259.88 468.09l-52 45.93-5.1-5.52 43.33-38.41H131.88v-8h114.21l-43.25-38.36 5-5.62 52.06 46z" transform="translate(-131.88 -418.11)"></path>
                                                 </svg>
                                             </span>
                                             <span className="text-sm md:text-xl text-white uppercase">Read more</span>
-                                        </a>
+                                        </Link>
                                     </div>
                                 </div>
                             </div>

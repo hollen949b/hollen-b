@@ -61,14 +61,14 @@ export default function HeaderTop({
 
                         <div className="col-start-3 col-span-1 relative">
                             <div className="absolute -top-[32px] left-2 bg-violet-500 rounded-full rotate-12 outline outline-offset-4 outline-4 outline-violet-500">
-                                <a className="text-center h-28 w-28 md:h-40 md:w-40 flex flex-col gap-2 items-center justify-center pb-5 md:pb-8" href="/#about">
+                                <Link className="text-center h-28 w-28 md:h-40 md:w-40 flex flex-col gap-2 items-center justify-center pb-5 md:pb-8" href="/#about">
                                     <span className="rotate-90">
                                         <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 95.91" className="h-10 w-10 md:h-16 md:w-16 fill-white">
                                             <path d="M259.88 468.09l-52 45.93-5.1-5.52 43.33-38.41H131.88v-8h114.21l-43.25-38.36 5-5.62 52.06 46z" transform="translate(-131.88 -418.11)"></path>
                                         </svg>
                                     </span>
                                     <span className="text-sm md:text-xl text-white uppercase">learn more</span>
-                                </a>
+                                </Link>
                             </div>
                         </div>
                     </div>

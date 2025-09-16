@@ -3,13 +3,17 @@ import { Resend } from 'resend';
 import { NextResponse } from 'next/server'
 import { getBusinessInfo } from '@/lib/api';
 
-const resend = new Resend(process.env.RESEND_API_KEY);
-
 export async function POST(request: Request) {
   const formData = await request.json()
   let response = {}
   let status = 200
   
+  // Check if API key is available
+  if (!process.env.RESEND_API_KEY) {
+    return NextResponse.json({error: 'Email service not configured'}, { status: 500 })
+  }
+  
+  const resend = new Resend(process.env.RESEND_API_KEY);
   const business = await getBusinessInfo()  
 
   try {

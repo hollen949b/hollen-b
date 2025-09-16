@@ -2,7 +2,7 @@ import HeaderTop from "@/components/layout/headers/HeaderTop";
 import SectionAbout from "@/components/layout/sections/SectionAbout";
 import SectionServices from "@/components/layout/sections/SectionServices";
 import SectionPortfolio from "@/components/layout/sections/SectionPortfolio";
-import SectionTestimonials from "@/components/layout/sections/SectionTestimonials";
+import SectionRecentActivity from "@/components/layout/sections/SectionRecentActivity";
 import SectionTools from "@/components/layout/sections/SectionTools";
 import SectionContact from "@/components/layout/contacts/SectionContact";
 import Anchor from "@/components/Anchor";
@@ -24,6 +24,10 @@ export default async function Home() {
         {/* Services Section */}
         <Anchor id="services" />
         <SectionServices />
+
+        {/* Recent Activity Section */}
+        <Anchor id="recent-activity" />
+        <SectionRecentActivity />
 
         {/* Projects Section */}
         <Anchor id="projects" />

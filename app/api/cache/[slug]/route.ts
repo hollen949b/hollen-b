@@ -1,8 +1,8 @@
 import { NextResponse } from 'next/server'
 import { revalidateTag } from 'next/cache'
 
-export async function GET(request: Request, context: { params:{ [key: string]: string } }) {
-  const params = context.params
+export async function GET(request: Request, context: { params: Promise<{ [key: string]: string }> }) {
+  const params = await context.params
   // let status = 200
   
   revalidateTag(params.slug)
