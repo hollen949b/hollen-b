@@ -12,7 +12,7 @@ export default function HeaderTop({
     return (
         <>
             <header className="w-full max-w-[100vw] min-h-[100vh] bg-zinc-500 transition-opacity ease-in duration-700 opacity-100 relative">
-                <div className="container relative z-20 h-screen flex flex-col items-center pt-32">
+                <div className="container relative z-20 h-screen flex flex-col items-center pt-40">
                     <div className="grid grid-cols-12 grid-rows-3 md:grid-rows-4 gap-x-2 gap-y-2 md:gap-x-8 md:gap-y-8 items-center my-auto w-full">
                         <div className="lg:col-span-1 relative h-full">
                             <div className="absolute -top-2 md:-top-6 -left-0 w-0">
@@ -30,7 +30,7 @@ export default function HeaderTop({
                             </div>
                         </div>
 
-                        <div className="col-start-3 col-span-11 row-span-1 md:row-span-2">
+                        <div className="relative col-start-3 col-span-11 row-span-1 md:row-span-2">
                             <motion.div 
                                 initial={{ opacity: 0 }}
                                 whileInView={{ opacity: 1 }} 
@@ -42,10 +42,22 @@ export default function HeaderTop({
                                         className
                                     )
                                 }>
-                                <div className="text-white font-extrabold uppercase text-[45px] leading-[44px] md:text-[90px] md:leading-[74px]">
+                                <div className="text-white font-black uppercase text-[45px] leading-[44px] md:text-[7.2vw] md:leading-[6vw]">
                                     <h1>Brandon<br />Hollenbeck</h1>
                                 </div>
                             </motion.div>
+                            <div className="absolute -top-[8vw] right-0">
+                                <Image
+                                    alt="Banner image"
+                                    src="/images/hollen-cat-01.webp"
+                                    quality={75}
+                                    width={600}
+                                    height={600}
+                                    priority
+                                    sizes="2000"
+                                    className="w-[30vw]"
+                                    />
+                            </div>
                         </div>
 
                         <div className="col-start-3 col-span-11">
@@ -79,9 +91,21 @@ export default function HeaderTop({
                         </Link>
                     </div>
                 </div>
+                <div className="absolute left-0 bottom-0 z-20">
+                    <Image
+                        alt="Banner image"
+                        src="/images/paint-splash-01.webp"
+                        quality={75}
+                        priority
+                        width={800}
+                        height={622}
+                        sizes="2000"
+                        className="w-[30vw]"
+                        />
+                </div>
                 <Image
                     alt="Banner image"
-                    src="/images/amp-banner-bg.webp"
+                    src="/images/space-01.webp"
                     quality={75}
                     fill
                     priority
@@ -92,7 +116,7 @@ export default function HeaderTop({
                     }} className="h-full w-full"
                     />
 
-                <div className="absolute z-10 inset-0 bg-gradient-to-t from-black/90 from-25% to-black/90"></div>
+                <div className="absolute z-10 inset-0 bg-gradient-to-t from-black/80 from-25% to-black/70"></div>
             </header>
         </>
     )

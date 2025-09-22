@@ -58,7 +58,7 @@ export default function SectionAbout({
                             <div className="relative w-full h-full max-h-[330px] md:max-h-[600px]">
                                 <Image
                                     alt="Web Development"
-                                    src="/images/amp-about-01.webp"
+                                    src="/images/about-01.webp"
                                     quality={75}
                                     fill
                                     priority
@@ -74,7 +74,7 @@ export default function SectionAbout({
                             <div className="relative w-full h-full min-h-[300px] md:min-h-[500px]">
                                 <Image
                                     alt="Review Website"
-                                    src="/images/amp-about-02.webp"
+                                    src="/images/about-02.webp"
                                     quality={75}
                                     fill
                                     priority
